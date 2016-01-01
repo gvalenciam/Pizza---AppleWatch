@@ -130,42 +130,42 @@
             <objects>
                 <controller identifier="FifthInterfaceController" id="BEj-wO-LDa" customClass="FifthInterfaceController" customModule="Pizza_WatchKit_Extension">
                     <items>
-                        <group width="1" height="293" alignment="left" layout="vertical" id="CWI-7O-2Bs">
+                        <group width="1" height="293" alignment="left" layout="vertical" spacing="6" id="CWI-7O-2Bs">
                             <items>
-                                <switch width="1" alignment="left" title="Jamón" id="SNl-r4-NhP">
+                                <switch width="1" height="35" alignment="left" title="Jamón" id="SNl-r4-NhP">
                                     <connections>
                                         <action selector="switchJamon:" destination="BEj-wO-LDa" id="9cF-p4-jI5"/>
                                     </connections>
                                 </switch>
-                                <switch width="1" alignment="left" title="Pepperoni" id="Azz-QO-DnR">
+                                <switch width="1" height="35" alignment="left" title="Pepperoni" id="Azz-QO-DnR">
                                     <connections>
                                         <action selector="switchPepperoni:" destination="BEj-wO-LDa" id="w68-ad-nDN"/>
                                     </connections>
                                 </switch>
-                                <switch width="1" alignment="left" title="Pavo" id="rtH-qi-I1P">
+                                <switch width="1" height="35" alignment="left" title="Pavo" id="rtH-qi-I1P">
                                     <connections>
                                         <action selector="switchPavo:" destination="BEj-wO-LDa" id="2LW-gp-Riw"/>
                                     </connections>
                                 </switch>
-                                <switch width="1" alignment="left" title="Salchicha" id="vJ3-ZR-ZB1">
+                                <switch width="1" height="35" alignment="left" title="Salchicha" id="vJ3-ZR-ZB1">
                                     <connections>
                                         <action selector="switchSalchicha:" destination="BEj-wO-LDa" id="kRB-Ie-35y"/>
                                     </connections>
                                 </switch>
-                                <switch width="1" alignment="left" title="Aceituna" id="8SG-JI-cxq">
+                                <switch width="1" height="35" alignment="left" title="Aceituna" id="8SG-JI-cxq">
                                     <connections>
                                         <action selector="switchAceituna:" destination="BEj-wO-LDa" id="ZiJ-HM-yQs"/>
                                     </connections>
                                 </switch>
-                                <switch width="1" alignment="left" title="Cebolla" id="est-Yc-clo">
+                                <switch width="1" height="35" alignment="left" title="Cebolla" id="est-Yc-clo">
                                     <connections>
                                         <action selector="switchCebolla:" destination="BEj-wO-LDa" id="CoG-Bd-2pJ"/>
                                     </connections>
                                 </switch>
-                                <button width="1" alignment="left" title="Iniciar Pedido" enabled="NO" id="byk-Kx-wRH">
+                                <separator alignment="left" id="zam-wF-wDo"/>
+                                <button width="1" alignment="left" title="Iniciar Pedido" id="byk-Kx-wRH">
                                     <connections>
                                         <action selector="botonIniciarPedido" destination="BEj-wO-LDa" id="8F6-OQ-6t5"/>
-                                        <segue destination="IzS-x0-ECg" kind="push" id="vMQ-dx-NT3"/>
                                     </connections>
                                 </button>
                             </items>
@@ -201,6 +201,7 @@
                                     </items>
                                 </group>
                                 <label width="1" alignment="left" text="Label" textAlignment="center" id="jex-PS-suB"/>
+                                <separator alignment="left" id="GLa-sD-kjc"/>
                                 <button width="1" height="25" alignment="left" title="Confirmar" id="dX8-wQ-Ad9">
                                     <connections>
                                         <action selector="botonConfirmar" destination="IzS-x0-ECg" id="ubQ-Gy-zQO"/>

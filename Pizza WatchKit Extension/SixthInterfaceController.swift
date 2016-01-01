@@ -36,6 +36,22 @@ class SixthInterfaceController: WKInterfaceController {
         
         pushControllerWithName("FirstInterfaceController", context: nil)
         cadenauno = "Pedido Listo!!!"
+        cadenajamon = ""
+        cadenapepperoni = ""
+        cadenapavo = ""
+        cadenasalchicha = ""
+        cadenaaceituna = ""
+        cadenacebolla = ""
+        
+        banderajamon = 0
+        banderapepperoni = 0
+        banderapavo = 0
+        banderasalchicha = 0
+        banderaaceituna = 0
+        banderacebolla = 0
+        
+        contador = 0
+        
     }
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -45,13 +61,40 @@ class SixthInterfaceController: WKInterfaceController {
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-        LabelUno.setText("Tamaño:" + cadenados)
-        LabelDos.setText("Masa:" + cadenatres)
-        LabelTres.setText("Queso:" + cadenacuatro)
-        LabelCuatro.setText(cadenajamon + " " + cadenapepperoni)
-        LabelCinco.setText(cadenapavo + " " + cadenasalchicha)
-        LabelSeis.setText(cadenaaceituna + " " + cadenacebolla)
+        if (contador <= 0)
+        {
+            super.willActivate()
+            LabelUno.setText("Por favor")
+            LabelDos.setText("seleccione")
+            LabelTres.setText("al")
+            LabelCuatro.setText("menos")
+            LabelCinco.setText("un")
+            LabelSeis.setText("ingrediente")
+            BotonConfirmar.setEnabled(false)
+            
+        }
+        else if (contador == 6)
+        {
+            super.willActivate()
+            LabelUno.setText("Por favor")
+            LabelDos.setText("seleccione")
+            LabelTres.setText("como")
+            LabelCuatro.setText("máximo")
+            LabelCinco.setText("cinco")
+            LabelSeis.setText("ingredientes")
+            BotonConfirmar.setEnabled(false)
+        }
+        else
+        {
+            super.willActivate()
+            LabelUno.setText("Tamaño:" + cadenados)
+            LabelDos.setText("Masa:" + cadenatres)
+            LabelTres.setText("Queso:" + cadenacuatro)
+            LabelCuatro.setText(cadenajamon + " " + cadenapepperoni)
+            LabelCinco.setText(cadenapavo + " " + cadenasalchicha)
+            LabelSeis.setText(cadenaaceituna + " " + cadenacebolla)
+            BotonConfirmar.setEnabled(true)
+        }
     }
 
     override func didDeactivate() {

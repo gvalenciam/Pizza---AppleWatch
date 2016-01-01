@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0DE3C8335E76F941827437F5BE33F619FAB8FBFB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8E7AD8ED87EE6447759E4142023DC7A7BBEA6A07" : 0,
+    "0DE3C8335E76F941827437F5BE33F619FAB8FBFB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DA1385CA-13CE-4AA7-B72C-A5D7295900C8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8E7AD8ED87EE6447759E4142023DC7A7BBEA6A07" : "",
+    "0DE3C8335E76F941827437F5BE33F619FAB8FBFB" : "Pizza\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Pizza",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Pizza.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gvalenciam\/Pizza---AppleWatch.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0DE3C8335E76F941827437F5BE33F619FAB8FBFB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gvalenciam\/Interfaz-iOS---Pizza.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8E7AD8ED87EE6447759E4142023DC7A7BBEA6A07"
+    }
+  ]
+}

@@ -9,18 +9,19 @@
 import WatchKit
 import Foundation
 
+var contador = 0
 var cadenajamon = ""
-var banderajamon = 3
+var banderajamon = 0
 var cadenapepperoni = ""
-var banderapepperoni = 3
+var banderapepperoni = 0
 var cadenapavo = ""
-var banderapavo = 3
+var banderapavo = 0
 var cadenasalchicha = ""
-var banderasalchicha = 3
+var banderasalchicha = 0
 var cadenaaceituna = ""
-var banderaaceituna = 3
+var banderaaceituna = 0
 var cadenacebolla = ""
-var banderacebolla = 3
+var banderacebolla = 0
 
 var cadenacinco = ""
 
@@ -37,9 +38,8 @@ class FifthInterfaceController: WKInterfaceController {
     
     @IBAction func botonIniciarPedido() {
         
-        cadenacinco = cadenajamon
-        
         pushControllerWithName("SixthInterfaceController", context: nil)
+        
     }
     
     @IBAction func switchJamon(value: Bool) {
@@ -50,18 +50,14 @@ class FifthInterfaceController: WKInterfaceController {
             SwitchJamon.setOn(true)
             cadenajamon = "Jamon"
             banderajamon = 1
-            BotonIniciarPedido.setEnabled(true)
+            contador = contador + 1
         }
         else
         {
             SwitchJamon.setOn(false)
             cadenajamon = ""
             banderajamon = 0
-            
-            if (banderapepperoni == 0 && banderapavo == 0 && banderasalchicha == 0 && banderaaceituna == 0 && banderacebolla == 0)
-            {
-                BotonIniciarPedido.setEnabled(false)
-            }
+            contador = contador - 1
         }
     }
     
@@ -73,18 +69,14 @@ class FifthInterfaceController: WKInterfaceController {
             SwitchPepperoni.setOn(true)
             cadenapepperoni = "Pepperoni"
             banderapepperoni = 1
-            BotonIniciarPedido.setEnabled(true)
+            contador = contador + 1
         }
         else
         {
             SwitchPepperoni.setOn(false)
             cadenapepperoni = ""
             banderapepperoni = 0
-            
-            if (banderajamon == 0 && banderapavo == 0 && banderasalchicha == 0 && banderaaceituna == 0 && banderacebolla == 0)
-            {
-                BotonIniciarPedido.setEnabled(false)
-            }
+            contador = contador - 1
         }
     }
     
@@ -95,18 +87,14 @@ class FifthInterfaceController: WKInterfaceController {
             SwitchPavo.setOn(true)
             cadenapavo = "Pavo"
             banderapavo = 1
-            BotonIniciarPedido.setEnabled(true)
+            contador = contador + 1
         }
         else
         {
             SwitchPavo.setOn(false)
             cadenapavo = ""
             banderapavo = 0
-            
-            if (banderajamon == 0 && banderapepperoni == 0 && banderasalchicha == 0 && banderaaceituna == 0 && banderacebolla == 0)
-            {
-                BotonIniciarPedido.setEnabled(false)
-            }
+            contador = contador - 1
         }
     }
     
@@ -118,18 +106,14 @@ class FifthInterfaceController: WKInterfaceController {
             SwitchSalchicha.setOn(true)
             cadenasalchicha = "Salchicha"
             banderasalchicha = 1
-            BotonIniciarPedido.setEnabled(true)
+            contador = contador + 1
         }
         else
         {
             SwitchSalchicha.setOn(false)
             cadenasalchicha = ""
             banderasalchicha = 0
-            
-            if (banderapepperoni == 0 && banderapavo == 0 && banderajamon == 0 && banderaaceituna == 0 && banderacebolla == 0)
-            {
-                BotonIniciarPedido.setEnabled(false)
-            }
+            contador = contador - 1
         }
     }
     
@@ -140,18 +124,14 @@ class FifthInterfaceController: WKInterfaceController {
             SwitchAceituna.setOn(true)
             cadenaaceituna = "Aceituna"
             banderaaceituna = 1
-            BotonIniciarPedido.setEnabled(true)
+            contador = contador + 1
         }
         else
         {
             SwitchAceituna.setOn(false)
             cadenaaceituna = ""
             banderaaceituna = 0
-            
-            if (banderapepperoni == 0 && banderapavo == 0 && banderasalchicha == 0 && banderajamon == 0 && banderacebolla == 0)
-            {
-                BotonIniciarPedido.setEnabled(false)
-            }
+            contador = contador - 1
         }
 
     }
@@ -163,18 +143,15 @@ class FifthInterfaceController: WKInterfaceController {
             SwitchCebolla.setOn(true)
             cadenacebolla = "Cebolla"
             banderacebolla = 1
-            BotonIniciarPedido.setEnabled(true)
+            contador = contador + 1
         }
         else
         {
             SwitchCebolla.setOn(false)
             cadenacebolla = ""
             banderacebolla = 0
-            
-            if (banderapepperoni == 0 && banderapavo == 0 && banderasalchicha == 0 && banderajamon == 0 && banderaaceituna == 0)
-            {
-                BotonIniciarPedido.setEnabled(false)
-            }
+            contador = contador - 1
+
         }
     }
     override func awakeWithContext(context: AnyObject?) {
@@ -194,8 +171,6 @@ class FifthInterfaceController: WKInterfaceController {
     }
     
     override func willDisappear() {
-        
-        cadenacinco = cadenajamon + cadenapepperoni + cadenapavo + cadenasalchicha + cadenaaceituna + cadenacebolla
     }
 
 }
